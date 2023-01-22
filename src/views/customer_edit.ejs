@@ -1,0 +1,37 @@
+<%- include('partials/_header') %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/update/<%= data.id %>" method="post"> 
+                        <!--Input -->
+                        <div class="form-group mb-2" >
+                            <input type="text" name="name" value="<%= data.name %>" class="form-control" autocomplete="off">
+                        </div>
+                        <!-- Input -->
+                        <div class="form-group mb-2">
+                            <input type="text" name="address" value="<%= data.address %>" class="form-control" autocomplete="off">
+                        </div>
+                        <!-- Input -->
+                        <div class="form-group mb-2">
+                            <input type="number" name="phone" value="<%= data.phone %>" class="form-control" autocomplete="off">
+                        </div>
+                        <!-- Boton  -->
+                        <button type="submit" class="btn btn-primary">
+                            Editar
+                        </button>
+        
+        
+                          </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<%- include('partials/_footer') %>
